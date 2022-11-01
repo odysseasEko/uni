@@ -1,3 +1,4 @@
+import hackCeasar
 def encrypt(text,s): #xekinaei to function
     result = "" #string result pou tha gemisoume parakatw
     for i in range(len(text)): #setaroume ton vroho gia ton arithmo haraktirwn tis metavlitis text
@@ -13,3 +14,5 @@ s = 8 #poso shift tha kanei o algorithmos
 print ("Plain Text : " + text) 
 print ("Shift pattern : " + str(s))
 print ("Cipher: " + encrypt(text,s))
+
+hackCeasar.hackCeasar(text)
