@@ -1,3 +1,4 @@
+import ceasarModule
 def hackCeasar(message):
     LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     for key in range(len(LETTERS)): #vrohos me arithmo epanalipsewn oso i alfavita
@@ -13,3 +14,8 @@ def hackCeasar(message):
                 translated = translated + " " # an den eiparhei sto letters vazw space
         print('Hacking key #%s: %s' % (key, translated))
 
+text = input("parakalw valte keimeno gia na kriptografithei (kefalea):\n")
+s = 8
+print ("Plain Text : " + text) 
+message = ceasarModule.encrypt(text,s) #kalw to ceasarModule pou kanei encrypt to message
+hackCeasar(message) #kalw tin hack ceasar apo panw
