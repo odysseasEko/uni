@@ -8,7 +8,7 @@ def encrypt(text,s): #xekinaei to function
             result += chr((ord(char) + s - 97) % 26 + 97)
     return result #epistrefoume to apotelesma tou shift
 
- text = input("parakalw valte keimeno gia na kriptografithei (kefalea):\n") #to keimeno pou tha kriptografisoume
+text = input("parakalw valte keimeno gia na kriptografithei (kefalea):\n") #to keimeno pou tha kriptografisoume
 s = 8 #poso shift tha kanei o algorithmos
 print ("Plain Text : " + text) 
 print ("Shift pattern : " + str(s))
